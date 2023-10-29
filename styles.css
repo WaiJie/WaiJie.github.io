@@ -27,12 +27,13 @@ main {
 }
 
 .button {
+  width : 30%;
+  height : 10%;
   padding: 10px 20px;
   margin: 0 5px;
   background-color: #ccc;
   color: #333;
   border: none;
-  border-radius: 5px;
   cursor: pointer;
 }
 
