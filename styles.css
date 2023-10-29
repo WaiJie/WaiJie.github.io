@@ -2,10 +2,11 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #000066;
 }
 
 header {
-  background-color: #000033;
+  background-color: #000066;
   color: #fff;
   padding: 20px;
   text-align: center;
@@ -24,11 +25,13 @@ main {
   display: flex;
   justify-content: center;
   margin-top: 20px;
+  width : 30%;
+  height : 20%;
 }
 
 .button {
   width : 30%;
-  height : 10%;
+  height : 20%;
   padding: 10px 20px;
   margin: 0 5px;
   background-color: #ccc;
