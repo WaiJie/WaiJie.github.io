@@ -68,9 +68,11 @@ main {
 }
 
 .grid-item {
-    border: 5px solid #ccc; /* Add borders or styling to your grid items */
-    padding: 20px;
-    text-align: center;
+  border: 5px solid #ccc; /* Add borders or styling to your grid items */
+  padding: 20px;
+  text-align: center;
+  width: 30%; /* Set the width of the grid item */
+  height: 50%; /* Set the height of the grid item */
 }
 
 .grid-item img {
