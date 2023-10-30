@@ -64,18 +64,16 @@ main {
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
     height: 50vh;
-    background-image: url('https://img.freepik.com/free-vector/construction-realistic-with-orange-helmet-caution-placard-fencing-tape-with-yellow-black-stripes_1284-28793.jpg'); /* Replace with the URL of the image you want to use */
-    background-size: cover; /* Adjust how the background image is displayed */
+    background-color: #000066;
 }
 
 .grid-item {
-    border: 2px solid #ccc; /* Add borders or styling to your grid items */
+    border: 5px solid #ccc; /* Add borders or styling to your grid items */
     padding: 20px;
     text-align: center;
 }
 
 .grid-item img {
-  object-fit: cover; /* or object-fit: contain; */
   width: 100%;
-  height: 100%;
+  height: auto;
 }
