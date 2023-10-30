@@ -58,3 +58,20 @@ main {
   margin: 10px;
   text-align: center;
 }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Set column widths to 1fr each */
+    gap: 10px; /* Adjust the gap between grid items as needed */
+    max-width: 800px; /* Set the maximum width of the grid container */
+    margin: 0 auto; /* Center the grid container */
+    padding: 20px;
+}
+
+.grid-item {
+    border: 1px solid #ddd; /* Add borders or styling to your grid items */
+    padding: 20px;
+    text-align: center;
+}
+
+
