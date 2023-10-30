@@ -64,7 +64,7 @@ main {
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
     height: 50vh;
-    background-image: url('https://img.freepik.com/free-vector/construction-realistic-with-orange-helmet-caution-placard-fencing-tape-with-yellow-black-stripes_1284-28793.jpg?w=1060&t=st=1698679029~exp=1698679629~hmac=2f60d4c55a460671da17b068637a99db071462fa80d06dd08d4798209f50aa14'); /* Replace with the URL of the image you want to use */
+    background-image: url('https://img.freepik.com/free-vector/construction-realistic-with-orange-helmet-caution-placard-fencing-tape-with-yellow-black-stripes_1284-28793.jpg'); /* Replace with the URL of the image you want to use */
     background-size: cover; /* Adjust how the background image is displayed */
 }
 
