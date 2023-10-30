@@ -61,11 +61,11 @@ main {
 
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr; /* Set column widths to 1fr each */
-    gap: 10px; /* Adjust the gap between grid items as needed */
-    max-width: 800px; /* Set the maximum width of the grid container */
-    margin: 0 auto; /* Center the grid container */
-    padding: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    height: 50vh;
+    background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fmartincity.org%2F135th-st-construction-progress-report%2F&psig=AOvVaw0BrrI0OHGxAC22uUjIrdco&ust=1698752200374000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCLDfoKHXnYIDFQAAAAAdAAAAABAV'); /* Replace with the URL of the image you want to use */
+    background-size: cover; /* Adjust how the background image is displayed */
 }
 
 .grid-item {
