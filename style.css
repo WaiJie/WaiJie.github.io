@@ -63,5 +63,5 @@ p {
   height: auto;
   margin: 20px auto; /* Center the image */
   display: block; /* Remove any default inline styles */
-  max-width: 300px; /* Set a maximum width for the image */
+  max-width: 600px; /* Set a maximum width for the image */
 }
