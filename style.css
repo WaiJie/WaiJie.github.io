@@ -58,3 +58,9 @@ p {
   margin-bottom: 0;
 }
 
+.project img {
+    max-width: 50%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
