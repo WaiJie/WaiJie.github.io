@@ -61,7 +61,7 @@ p {
 .project img {
   max-width: 100%;
   height: auto;
-  margin: 0 auto; /* Center the image */
+  margin: 20px auto; /* Center the image */
   display: block; /* Remove any default inline styles */
   max-width: 300px; /* Set a maximum width for the image */
 }
