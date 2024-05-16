@@ -1,0 +1,353 @@
+/* App.css */
+
+:root {
+  --primary-color: rgba(17, 17, 17, 0.1);
+  --text-color: #333;
+  --bg-color: #fff;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --transition-duration: 0.3s;
+}
+
+body {
+  font-family: 'Verdana', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #ffffff;
+  background: url('Images/wavy.jpg') no-repeat center center / cover, rgba(0, 0, 0, 0.5);
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.App {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  flex: 1;
+}
+
+.header {
+  position: relative;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  margin-bottom: 20px;
+  height: 400px;
+}
+
+.header-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.header-no-content {
+  height: auto;
+}
+
+.header h1,
+.header p {
+  margin: 0;
+}
+
+.projects {
+  background-color: #161212;
+  padding: 20px;
+  border-radius: 30px;
+}
+.contact,
+.academics,
+.about {
+  background-color: #161212;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.contact,
+.about ul li{
+  font-size: 16px;
+}
+
+a {
+  color: #007BFF; 
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+  gap: 20px;
+}
+
+.project-box {
+  padding: 16px;
+  text-align: center;
+  transition: transform var(--transition-duration);
+  border-radius: 18px;
+  color: #fff;
+  text-decoration: none;
+  width: 90%; /* Fixed width for the .project-box */
+  position: relative; /* Needed for absolute positioning of the image and text */
+  overflow: hidden; /* Hide overflow content */
+}
+
+.project-box::before {
+  content: "";
+  display: block;
+  padding-bottom: 66.66%; /* This is 4:3 aspect ratio (height/width*100%) */
+}
+
+.project-box img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Cover the entire box while maintaining aspect ratio */
+}
+
+.project-box-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  color: #fff;
+  text-align: center;
+  font-size: 0.9em;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.project-box:hover {
+  transform: translateY(-5px) scale(1.04);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.project-detail-image {
+  width: 100%;
+  height: auto;
+  max-width: 600px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.vertical-stack {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* This will stack the elements vertically within the container */
+  background-color: #161212;
+  border-radius: 18px;
+  padding: 50px;
+  line-height: 2;
+}
+
+.vertical-stack p {
+  text-align: left; /* This will align the text to the left */
+}
+
+.contact input,
+.contact textarea,
+.contact button {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.contact button {
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 10px 0;
+  text-align: right;
+}
+
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.navbar li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1em;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+.filter-buttons {
+  display: flex;
+  justify-content: left;
+  margin-bottom: 24px;
+}
+
+.filter-buttons button {
+  margin-right: 10px;
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color var(--transition-duration);
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  outline: 2px solid #fff; /* Add a visible outline */
+  outline-offset: 2px;
+}
+
+.filter-buttons button:last-child {
+  margin-right: 0;
+}
+
+.filter-buttons button.active {
+  background-color: #333;
+}
+
+.filter-buttons button:hover {
+  background-color: #161212;
+}
+
+
+.table {
+  border-collapse: collapse;
+  width: 80%;
+  margin: auto;
+}
+
+.th, td {
+  border: 1px solid rgb(255, 255, 255);
+  padding: 8px;
+  text-align: left;
+
+}
+
+/* Styles for screens up to 768px */
+@media (max-width: 600px) {
+  .about,
+  .projects,
+  .contact {
+    padding: 20px;
+  }
+
+  .about h2,
+  .projects h2,
+  .contact h2 {
+    font-size: 1.5em;
+  }
+
+  .about p,
+  .projects p,
+  .contact p {
+    font-size: 0.8em;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.7em;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar li {
+    margin-bottom: 10px;
+  }
+
+  .header-content {
+    text-align: center;
+  }
+
+  .filter-buttons {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 16px;
+  }
+
+  .filter-buttons button {
+    margin: 5px;
+    padding: 8px 16px;
+    font-size: 0.8em;
+  }
+
+  .project-grid {
+    grid-template-columns: 0.9fr; /* Stack projects vertically on smaller screens */
+  }
+
+  .project-box {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .project-box img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .header{
+    font-size:0.9em;
+  }
+
+}
+
+/* Styles for screens up to 991px */
+@media (min-width: 600px) and (max-width:900px){
+  .project-grid {
+    display: grid;
+    grid-template-columns: 0.9fr;
+    gap: 20px;
+  }
+
+  .project-box {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .project-box img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .header{
+    font-size:0.85em;
+  }
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1em;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar li {
+    margin-bottom: 10px;
+  }
+}
