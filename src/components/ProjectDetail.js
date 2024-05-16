@@ -11,7 +11,7 @@ const ProjectDetailContent1 = ({ title, image }) => (
     <p>This project analyzed historical temperature data for Singapore to forecast future trends in average daily maximum and minimum temperatures.</p>
     <img src={image} alt={title} className="project-detail-image" />
     <p>As the full report is very long, a summary of the project is as follows.</p>
-    <img src='/pages_test/Images/Forecasting Project Data Prep.jpg' alt='forecasting-project-dataprep' className="project-detail-image" />
+    <img src='/Images/Forecasting Project Data Prep.jpg' alt='forecasting-project-dataprep' className="project-detail-image" />
     <ul>
       <p>Data Preparation:</p>
       <li>Extracted annual temperature and rainfall data from an Excel file.</li>
@@ -19,27 +19,27 @@ const ProjectDetailContent1 = ({ title, image }) => (
       <li>Isolated average daily maximum and minimum temperature time series.</li>
       <li>Ensured data integrity by checking for missing values.</li>
     </ul>
-    <img src='/pages_test/Images/Forecasting Project Explore.jpg' alt='forecasting-project-explore' className="project-detail-image" />
+    <img src='/Images/Forecasting Project Explore.jpg' alt='forecasting-project-explore' className="project-detail-image" />
     <ul>
       <p>Exploratory Data Analysis:</p>
       <li>Visualized trends in temperature using line plots.</li>
       <li>Confirmed a statistically significant upward trend in both average maximum and minimum temperatures using linear models.</li>
       <li>Investigated for seasonal cycles but found none.</li>
-      <img src='/pages_test/Images/Forecasting Project Explore2.jpg' alt='forecasting-project-explore2' className="project-detail-image" />
+      <img src='/Images/Forecasting Project Explore2.jpg' alt='forecasting-project-explore2' className="project-detail-image" />
       <li>Decomposed the time series into trend, seasonality, and random components using the mstl() function.</li>
       <li>Identified a high degree of trend component and a randomly scattered residual component.</li>
     </ul>
 
-    <img src='/pages_test/Images/Forecasting Project ACFPACF1.jpg' alt='forecasting-project-acf1' className="project-detail-image" />
-    <img src='/pages_test/Images/Forecasting Project ACFPACF2.jpg' alt='forecasting-project-acf2' className="project-detail-image" />
+    <img src='/Images/Forecasting Project ACFPACF1.jpg' alt='forecasting-project-acf1' className="project-detail-image" />
+    <img src='/Images/Forecasting Project ACFPACF2.jpg' alt='forecasting-project-acf2' className="project-detail-image" />
     <ul>
       <p>Model Selection:</p>
       <li>Identified ARIMA and double exponential smoothing models as suitable candidates due to the presence of trend and absence of seasonality.</li>
       <li>Determined model order based on ACF and PACF plots after differencing.</li>
       <li>Evaluated candidate models using AIC and MAD metrics, selecting ARIMA(1,1,1) for average maximum temperature and ARIMA(0,1,2) for average minimum temperature.</li>
     </ul>
-    <img src='/pages_test/Images/Forecasting Project ARIMA1.jpg' alt='forecasting-project-arima1' className="project-detail-image" />
-    <img src='/pages_test/Images/Forecasting Project ARIMA1.jpg' alt='forecasting-project-arima2' className="project-detail-image" />
+    <img src='/Images/Forecasting Project ARIMA1.jpg' alt='forecasting-project-arima1' className="project-detail-image" />
+    <img src='/Images/Forecasting Project ARIMA1.jpg' alt='forecasting-project-arima2' className="project-detail-image" />
     <ul>
       <p>Model Validation (Done for both ARIMA models chosen, ARIMA(1,1,1) and ARIMA(0,1,2)):</p>
       <li>Diagnosed model performance through residual analysis.No pattern should be found in the residuals.</li>
@@ -47,8 +47,8 @@ const ProjectDetailContent1 = ({ title, image }) => (
       <li>Verified normality of residuals using histograms, QQ plots, and Shapiro-Wilk normality tests.</li>
       <li>Checked for zero mean and constant variance in residuals.</li>
     </ul>
-    <img src='/pages_test/Images/Forecasting Project Diag1.jpg' alt='forecasting-project-diag1' className="project-detail-image" />
-    <img src='/pages_test/Images/Forecasting Project Diag2.jpg' alt='forecasting-project-diag2' className="project-detail-image" />
+    <img src='/Images/Forecasting Project Diag1.jpg' alt='forecasting-project-diag1' className="project-detail-image" />
+    <img src='/Images/Forecasting Project Diag2.jpg' alt='forecasting-project-diag2' className="project-detail-image" />
     <ul>
       <p>Forecasting Results and Discussion:</p>
       <li>Projected an upward trend in both average maximum and minimum temperatures in the next decade.</li>
@@ -57,7 +57,7 @@ const ProjectDetailContent1 = ({ title, image }) => (
       <li>Highlighted the Urban Heat Island effect, El Niño, and Indian Ocean Dipole as potential drivers of temperature fluctuations.</li>
       <li>Emphasized the need for caution in relying solely on short-term forecasts due to external uncertainties.</li>
     </ul>
-    <img src='/pages_test/Images/Forecasting Project Forecast1.jpg' alt='forecasting-project-forecast1' className="project-detail-image" />
+    <img src='/Images/Forecasting Project Forecast1.jpg' alt='forecasting-project-forecast1' className="project-detail-image" />
     <ul>
       <p>Conclusion:</p>
       <li>Singapore's average temperatures have been steadily increasing, with a statistically significant upward trend.</li>
@@ -98,7 +98,7 @@ const ProjectDetailContent2 = ({ title, image }) => (
     </ul>
 
     <h3>3. Data Preparation</h3>
-    <img src='/pages_test/Images/SPSS Project Dataprep.jpg' alt='SPSS-project-dataprep' className="project-detail-image" />
+    <img src='/Images/SPSS Project Dataprep.jpg' alt='SPSS-project-dataprep' className="project-detail-image" />
     <ul>
       <li>Formatting of Remaining Lease: The text format of "remaining_lease" was converted to a numeric value in years by extracting year and month values.</li>
       <li>Creation of High Value Flag: A new "high_value" column was created based on the "resale_price" to categorize flats above or below $1 million.</li>
@@ -139,10 +139,10 @@ const ProjectDetailContent2 = ({ title, image }) => (
       </table>
     
     <h3>4. Modeling / Visualisation</h3>
-    <img src='/pages_test/Images/SPSS Project Modeler.png' alt='SPSS-project-modeler' className="project-detail-image" />
+    <img src='/Images/SPSS Project Modeler.png' alt='SPSS-project-modeler' className="project-detail-image" />
     <p>K-means Clustering: The K-means clustering model was selected to identify natural groupings of HDB flats based on their characteristics. Two clusters were chosen to represent distinct groups: high-value flats (above $1 million) and lower-value flats (below $1 million).</p>
     <ul>
-      <img src='/pages_test/Images/SPSS Project Cluster.jpg' alt='SPSS-project-cluster' className="project-detail-image" />
+      <img src='/Images/SPSS Project Cluster.jpg' alt='SPSS-project-cluster' className="project-detail-image" />
       <li>Cluster 1 (Lower Value): Generally located on lower floors with shorter average remaining leases (78.32 years).</li>
       <li>Cluster 2 (High Value): Primarily located on higher floors with longer average remaining leases (89.95 years).</li>
     </ul>
@@ -178,7 +178,7 @@ const ProjectDetailContent3 = ({ title, image }) => (
     <p>Project Date : November 2023</p>
     <p>Related to : ANL 503: Data Wrangling</p>
     <p>This project involved extracting and consolidating data from multiple Excel spreadsheets containing doctor survey responses into a structured MySQL database. The project focused on achieving efficiency and reusability for future data integration.</p>
-    <img src='/pages_test/Images/Python Project Consolidation1.png' alt='python-project1' className="project-detail-image" />
+    <img src='/Images/Python Project Consolidation1.png' alt='python-project1' className="project-detail-image" />
     <p>Example of one of the Excel spreadsheets 'Jan.xlsx'. There is one workbook per month and the sheet names are inconsistent for each workbook.</p>
     
     <h3>Requirements</h3>
@@ -199,7 +199,7 @@ const ProjectDetailContent3 = ({ title, image }) => (
     <li>Renames columns to meaningful descriptions based on the context of the data.</li>
     </ul>
 
-    <img src='/pages_test/Images/Python Project Consolidation2.png' alt='python-project2' className="project-detail-image" />
+    <img src='/Images/Python Project Consolidation2.png' alt='python-project2' className="project-detail-image" />
     <p>Code snippet to automatically get file names of all excel files in that folder.</p>
 
     <h3>Key accomplishments</h3>
@@ -211,7 +211,7 @@ const ProjectDetailContent3 = ({ title, image }) => (
     </ul>
 
     <p>The loaded datasets in mySQL database can be seen in the screenshot below.</p>
-    <img src='/pages_test/Images/Python Project Consolidation3.png' alt='python-project3' className="project-detail-image" />
+    <img src='/Images/Python Project Consolidation3.png' alt='python-project3' className="project-detail-image" />
     
     <h3>Proficiencies shown</h3>
     <ul>
@@ -242,21 +242,21 @@ const ProjectDetailContent4 = ({ title, image }) => (
       <li>Responses marked as "DO NOT READ" were removed to create a subset of data for plotting.</li>
     </ul>
     <p>Sample of the dataset</p>
-    <img src='/pages_test/Images/Visualisation Project data.png' alt='visualisation1' className="project-detail-image" />
-    <img src='/pages_test/Images/Visualisation Project data2.png' alt='visualisation2' className="project-detail-image" />
+    <img src='/Images/Visualisation Project data.png' alt='visualisation1' className="project-detail-image" />
+    <img src='/Images/Visualisation Project data2.png' alt='visualisation2' className="project-detail-image" />
     <h3>Analysis </h3>
     
     <p>How Singaporean attitudes towards the US and China are shaped by demographics</p>
       <ul>
-      <img src='/pages_test/Images/Visualisation Project chart1.png' alt='visualisation-chart1' className="project-detail-image" />
+      <img src='/Images/Visualisation Project chart1.png' alt='visualisation-chart1' className="project-detail-image" />
       <li>Overall Sentiment: While a majority of Singaporeans hold somewhat favorable views of both countries, a higher percentage view China more favorably than the US.</li>
-      <img src='/pages_test/Images/Visualisation Project chart2.png' alt='visualisation-chart2' className="project-detail-image" />
+      <img src='/Images/Visualisation Project chart2.png' alt='visualisation-chart2' className="project-detail-image" />
       <li>Age: Younger respondents in their thirties are more likely to hold milder opinions, while older individuals tend to express stronger sentiments.</li>
-      <img src='/pages_test/Images/Visualisation Project chart3.png' alt='visualisation-chart3' className="project-detail-image" />
+      <img src='/Images/Visualisation Project chart3.png' alt='visualisation-chart3' className="project-detail-image" />
       <li>Gender: A higher proportion of men express more extreme opinions (very favorable or unfavorable) compared to women.</li>
-      <img src='/pages_test/Images/Visualisation Project chart4.png' alt='visualisation-chart4' className="project-detail-image" />
+      <img src='/Images/Visualisation Project chart4.png' alt='visualisation-chart4' className="project-detail-image" />
       <li>Ethnicity: Ethnically Chinese respondents tend to have a more favorable view of China, likely due to shared heritage. However, many also view the US favorably. Those not identifying as Chinese, Malay, or Indian express significantly more unfavorable opinions towards China than other ethnic groups.</li>
-      <img src='/pages_test/Images/Visualisation Project chart5.png' alt='visualisation-chart5' className="project-detail-image" />
+      <img src='/Images/Visualisation Project chart5.png' alt='visualisation-chart5' className="project-detail-image" />
       <li>Education: Individuals with lower levels of education (primary and below) are more likely to express extreme views, both favorable and unfavorable. Higher education levels tend to correlate with more neutral, "somewhat favorable" views.</li>
       <li>Income: Lower income groups are more likely to hold extreme opinions compared to higher income groups.</li>
     </ul>
@@ -274,19 +274,19 @@ const ProjectDetailContent5 = ({ title, image }) => (
     <p>Project Date : August 2022</p>
     <p>Related to : SAS AIML Program (Previously also known as the SAS BIA Program)</p>
     <p>In this project, we were tasked to extract insights from an ecommerce coupon site dataset using various SAS tools taught during the SAS AIML program such as SAS Data Studio and SAS Model Studio in SAS VIYA.</p>
-    <img src='/pages_test/Images/SAS Project Background1.png' alt='SAS-Bck1' className="project-detail-image" />
+    <img src='/Images/SAS Project Background1.png' alt='SAS-Bck1' className="project-detail-image" />
     <p>The Ponpare site is a coupon site which sells discount coupons for a wide variety of products in Japan.</p>
     <p>The full dataset contains various categories of data involving details of ecommerce user visits, demographics of the coupon users, as well as features or properties of the coupons sold. This dataset was obtained from Kaggle.</p>
-    <img src='/pages_test/Images/SAS Project Background2.png' alt='SAS-Bck2' className="project-detail-image" />
+    <img src='/Images/SAS Project Background2.png' alt='SAS-Bck2' className="project-detail-image" />
     
     <h3>Data Preparation</h3>
     <p> Several steps of data preparation was required before the data could be used as many of the characters were in Japanese and the dataset was not given in a suitable format for analysis. This was translated with the help of Google Translate to create lookup tables for the Japanese characters.</p>
-    <img src='/pages_test/Images/SAS Project Data Ext1.png' alt='SAS-Extract1' className="project-detail-image" />
+    <img src='/Images/SAS Project Data Ext1.png' alt='SAS-Extract1' className="project-detail-image" />
     <p>The data preparation steps were done in SAS using the Data Studio. This provides a visual interface to manipulate data in SAS VIYA. For more complex data transormations, we used user written SAS code to transform the data as seen below.</p>
-    <img src='/pages_test/Images/SAS Project Data Ext2.png' alt='SAS-Extract2' className="project-detail-image" />
+    <img src='/Images/SAS Project Data Ext2.png' alt='SAS-Extract2' className="project-detail-image" />
 
     <h3>Data Understanding and Exploration</h3>
-    <img src='/pages_test/Images/SAS Project Data Exp.png' alt='SAS-Explore1' className="project-detail-image" />
+    <img src='/Images/SAS Project Data Exp.png' alt='SAS-Explore1' className="project-detail-image" />
     
     <p>Insights from Data Exploration.</p>
     <ul>
@@ -297,29 +297,29 @@ const ProjectDetailContent5 = ({ title, image }) => (
       <li>very little users from 15-21 were using the site (0.3% of user base)</li>
       <li>Overall, customers profile of the site's users are those aged 36-50 years old</li>
     </ul>
-    <img src='/pages_test/Images/SAS Project Data Exp2.png' alt='SAS-Explore2' className="project-detail-image" />
+    <img src='/Images/SAS Project Data Exp2.png' alt='SAS-Explore2' className="project-detail-image" />
     <p>The purhcase habits of customers for different genres of coupons also proved to be interesting. Males tend to purchase the most food coupons, while females purchased the most delivery service coupons.However when analysing by revenue, the hotels category generated the most revenue for the site despite the food and delivery coupons selling in larger numbers.</p>
     
-    <img src='/pages_test/Images/SAS Project Data Exp3.png' alt='SAS-Explore3' className="project-detail-image" />
+    <img src='/Images/SAS Project Data Exp3.png' alt='SAS-Explore3' className="project-detail-image" />
     <p>The order in which the customer viewed the coupon also affected how likely they would purchase a coupon. From the path plot, when the customer views 6 or more coupons, the likelyhood a purchase was made fell significantly to almost zero. This can be seen from the increasingly narrow path in yellow which represents those who made a purchase.</p>
 
     <h3>Modeling</h3>
-    <img src='/pages_test/Images/SAS Project ML1.jpg' alt='SAS-ML1' className="project-detail-image" />
+    <img src='/Images/SAS Project ML1.jpg' alt='SAS-ML1' className="project-detail-image" />
     <p>To futher dive into the reasons behinds the trends observed, a binary classification model was created to predict whether a customer is likely to purchase a coupon.</p>
-    <img src='/pages_test/Images/SAS Project ML2.jpg' alt='SAS-ML2' className="project-detail-image" />
+    <img src='/Images/SAS Project ML2.jpg' alt='SAS-ML2' className="project-detail-image" />
     <p>Data was then prepared with data studio to shape the available data into the correct format for the classification model.</p>
-    <img src='/pages_test/Images/SAS Project ML prep.jpg' alt='SAS-ML3' className="project-detail-image" />
+    <img src='/Images/SAS Project ML prep.jpg' alt='SAS-ML3' className="project-detail-image" />
     <p>The features considered consist of user demographics (Age group, gender,etc.), location as well as attributes of the coupon such as the category and discount rates.</p>
 
-    <img src='/pages_test/Images/SAS Project ML prep2.jpg' alt='SAS-ML4' className="project-detail-image" />
+    <img src='/Images/SAS Project ML prep2.jpg' alt='SAS-ML4' className="project-detail-image" />
     <p> Further data preparation for machine learning was also performed on the dataset. These includes imputation of missing values, transforming/ scaling highly skewed variables.</p>
-    <img src='/pages_test/Images/SAS Project Model Eval.jpg' alt='SAS-ML5' className="project-detail-image" />
+    <img src='/Images/SAS Project Model Eval.jpg' alt='SAS-ML5' className="project-detail-image" />
     <p>Finally a series of candidate models were evaluated to find the best model that predicts if a customer is likely to buy the coupon given its characteristics. The Gradient bossting model was chosen as the champion model due to its higher accuracy and good precision in detecting the true positives.</p>
     
     <h3>Model Insights and potential applications</h3> 
-    <img src='/pages_test/Images/SAS Project Model Insights.jpg' alt='SAS-ML6' className="project-detail-image" />
+    <img src='/Images/SAS Project Model Insights.jpg' alt='SAS-ML6' className="project-detail-image" />
     <p>The top 5 most important characteristics of the coupons were the serial order (Order in which the customer sees the coupon), discounted price, genre, Month in which the discount starts and the period the discount is valid for.This aligns with the previous analysis that the viewing order of the coupon affects how likely someone purchases the coupon.</p>
-    <img src='/pages_test/Images/SAS Project Application.jpg' alt='SAS-ML7' className="project-detail-image" />
+    <img src='/Images/SAS Project Application.jpg' alt='SAS-ML7' className="project-detail-image" />
     <p>Potential applications of the model would be a recommendation system to recommend coupons to potential customers that are likely to buy. </p>
     <p>The model would provide the option to monetize the right for sellers to push up the viewing priority of their coupons as coupons shown to customers first are more likely to be purchased.</p>
 
