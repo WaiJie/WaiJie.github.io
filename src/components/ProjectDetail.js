@@ -311,7 +311,7 @@ const ProjectDetailContent5 = ({ title, image }) => (
     <img src='/Images/SAS Project ML prep.jpg' alt='SAS-ML3' className="project-detail-image" />
     <p>The features considered consist of user demographics (Age group, gender,etc.), location as well as attributes of the coupon such as the category and discount rates.</p>
 
-    <img src='/Images/SAS Project ML prep2.jpg' alt='SAS-ML4' className="project-detail-image" />
+    <img src='/Images/SAS Project ML Prep2.jpg' alt='SAS-ML4' className="project-detail-image" />
     <p> Further data preparation for machine learning was also performed on the dataset. These includes imputation of missing values, transforming/ scaling highly skewed variables.</p>
     <img src='/Images/SAS Project Model Eval.jpg' alt='SAS-ML5' className="project-detail-image" />
     <p>Finally a series of candidate models were evaluated to find the best model that predicts if a customer is likely to buy the coupon given its characteristics. The Gradient bossting model was chosen as the champion model due to its higher accuracy and good precision in detecting the true positives.</p>

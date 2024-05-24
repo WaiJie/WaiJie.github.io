@@ -9,13 +9,14 @@ function Modules() {
       <p>ANL 503: Data Wrangling</p>
       <p>ANL 505: Hyperautomation</p>
       <p>ANL 553: Applied Statistical Methods</p>
-      <p>Semester CGPA: 4.75 / 5.0 </p>
+      <p>Semester GPA: 4.75 / 5.00 </p>
       <p><br/></p>
       <h3>January 2024 Semester</h3>
       <p>ANL551: Data Analytics for Decision Makers</p>
       <p>ANL555: Data Integration for Enterprise Automation</p>
       <p>ANL557: Applied Forecasting</p>
-      <p>Semester CGPA: ? </p>
+      <p>Semester GPA: 4.83/ 5.00 </p>
+      <p>CGPA: 4.79/ 5.00 </p>
       <p><br/></p>
       <p>
         <a href="https://www.suss.edu.sg/programmes/detail/mavi" target="_blank" rel="noopener noreferrer">
