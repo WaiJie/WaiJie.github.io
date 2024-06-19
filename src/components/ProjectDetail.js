@@ -331,8 +331,8 @@ const ProjectDetailContent5 = ({ title, image }) => (
 const ProjectDetailContent6 = ({ title, image }) => (
   <section className="vertical-stack">
     <h2>{title}</h2>
-    <p>Project Date : -</p>
-    <p>Related to : -</p>
+    <p>Project Date : 16 June 2024</p>
+    <p>Related to : Personal Project</p>
     {/* <img src={image} alt={title} className="project-detail-image" /> */}
     <p>In this project, I developed a question-and-answer (Q&A) chatbot for my website utilizing generative artificial intelligence (AI) technologies, specifically leveraging a technique known as Retrieval-Augmented Generation (RAG). This chatbot aims to enhance user experience by providing an interactive platform to explore website content and background information.</p>
     <p>Technical Framework:
