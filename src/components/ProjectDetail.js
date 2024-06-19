@@ -334,11 +334,28 @@ const ProjectDetailContent6 = ({ title, image }) => (
     <p>Project Date : -</p>
     <p>Related to : -</p>
     {/* <img src={image} alt={title} className="project-detail-image" /> */}
-    <p>Work in Progress - Tidying up some other past assignments. </p>
-    <p>Work in Progress - Finding a better way to showcase the code aspects. </p>
+    <p>In this project, I developed a question-and-answer (Q&A) chatbot for my website utilizing generative artificial intelligence (AI) technologies, specifically leveraging a technique known as Retrieval-Augmented Generation (RAG). This chatbot aims to enhance user experience by providing an interactive platform to explore website content and background information.</p>
+    <p>Technical Framework:
+      <li>Streamlit: This Python library facilitated the creation of the web application and user interface for the chatbot, enabling a user-friendly chat window. </li>
+      <li>Langchain: This framework, designed specifically for generative AI applications, provided the core functionalities for the chatbot. It enabled interaction with a powerful AI model capable of comprehending website content and responding to user queries, along with functionalities for implementing RAG.</li></p>
+
+    <h3>Understanding RAG</h3>
+    <p>RAG is a technique that empowers generative AI models by incorporating external knowledge sources beyond their pre-trained data. This allows the chatbot to access and leverage up-to-date information from the website content database, resulting in more accurate and contextually relevant responses to user inquiries.</p>
+
+    <h3>Data preparation</h3>
+    <p>Website content was loaded from the my website using Langchain Document Loaders component "AsyncChromiumLoader". This created document objects with the contents of each page of my website. Similarly, I also loaded my resume docx file with the UnstructuredWordDocumentLoader provided by Langchain.</p>
+    <p>The documents were then split into smaller chunks using the RecursiveCharacterTextSplitter in Langchain to create smaller chunks of text to be provided as context to the AI model.</p>
+    <p>These chunks were then embeded as vectors using the gemini AI embedding-001 model and stored locally in a FAISS vector db.</p>
+    
+    <h3>Chatbot features</h3>
+    <p>User Inquiry: Users can directly pose their questions within the chat interface. Sample questions are provided to guide users in exploring website content or my professional background.</p>
+    <p>Retrieval: Leveraging Langchain, RAG comes into play. The system retrieves relevant contextual information about the website content/ resume through the FAISS vector db.</p>
+    <p>Chatbot output: The AI generates a response for the user based on the retrieved context. This response is displayed in the chat window, along with references (links) to the sources of text chunks provided to the AI.</p>
+  
+    <h3>Project Significance</h3>
+    <p>This project not only fosters a more interactive and informative experience for website visitors but also serves as a valuable learning venture into the realm of generative AI, particularly the application of RAG for enhanced information retrieval and response generation.</p>
   </section>
 );
-
 
 
 // Mapping of project titles to components
@@ -348,7 +365,7 @@ const projectDetailContentComponents = {
   'Data Consolidation & Transformation with Python': ProjectDetailContent3,
   'Visualising Singaporean Attitudes towards the US and China': ProjectDetailContent4,
   'SAS Data Science AIML Program Final Project': ProjectDetailContent5,
-  'Work in Progress': ProjectDetailContent6,
+  'Building a Q&A Chatbot using Streamlit and Generative AI': ProjectDetailContent6,
   // ... Continue for other projects
 };
 
