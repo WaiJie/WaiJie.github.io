@@ -1,0 +1,32 @@
+[
+  {
+    "id": "post1",
+    "title": "Forecasting Temperatures in Singapore with R",
+    "date": "April 2024",
+    "tags": ["R", "Forecasting", "ARIMA", "Featured"]
+  },
+  {
+    "id": "post2",
+    "title": "Identifying High Value HDB Flats with SPSS Modeler",
+    "date": "April 2024",
+    "tags": ["SPSS Modeler", "Tableau", "Machine Learning", "Featured"]
+  },
+  {
+    "id": "post3",
+    "title": "Analysis and Modeling of ecommerce coupon sales using SAS Viya",
+    "date": "August 2022",
+    "tags": ["SAS", "SAS Viya", "Data Analysis", "Machine Learning", "Featured"]
+  },
+  {
+    "id": "post4",
+    "title": "Data Consolidation & Transformation with Python",
+    "date": "November 2023",
+    "tags": ["Automation", "Python", "Excel", "MySQL"]
+  },
+  {
+    "id": "post5",
+    "title": "Visualising Singaporean Attitudes towards the US and China",
+    "date": "August 2023",
+    "tags": ["Data Visualisation", "R", "Data Analysis"]
+  }
+]

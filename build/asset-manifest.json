@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/profiletest/static/css/main.a2c6fe6b.css",
+    "main.js": "/profiletest/static/js/main.b463d993.js",
+    "static/media/header-img.jpg": "/profiletest/static/media/header-img.65fe4b0ed573d622f0e0.jpg",
+    "index.html": "/profiletest/index.html",
+    "main.a2c6fe6b.css.map": "/profiletest/static/css/main.a2c6fe6b.css.map",
+    "main.b463d993.js.map": "/profiletest/static/js/main.b463d993.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a2c6fe6b.css",
+    "static/js/main.b463d993.js"
+  ]
+}
