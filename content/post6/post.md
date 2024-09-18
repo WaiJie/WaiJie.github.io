@@ -56,3 +56,5 @@ The Hausman test showed that the random effects model is an acceptable simplific
 The DID analysis with both fixed and random effects models demonstrates that the 10% discount had a significant impact on dairy product sales, particularly evident from day 9 onwards. The parallel trends assumption was validated for the pre-treatment period. The population variable did not significantly affect sales and can be excluded from the model. Both fixed and random effects models are appropriate, with the random effects model being a simpler alternative.
 
 The increase in sales due to the discount was quantified as 51.6 units on day 9, highlighting the effectiveness of the promotional strategy.
+
+##### The full version of this project was submitted as part of an assessment during the course ANL553: Applied Statistical Methods and Causal Analysis
