@@ -28,5 +28,11 @@
     "title": "Visualising Singaporean Attitudes towards the US and China",
     "date": "August 2023",
     "tags": ["Data Visualisation", "R", "Data Analysis"]
+  },
+  {
+    "id": "post6",
+    "title": "Difference-in-Differences (DID) Analysis of 10% Discount on Dairy Product Sales",
+    "date": "November 2023",
+    "tags": ["Statistical Methods", "R", "Causal Analysis"]
   }
 ]
