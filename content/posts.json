@@ -34,5 +34,11 @@
     "title": "Difference-in-Differences (DID) Analysis of 10% Discount on Dairy Product Sales",
     "date": "November 2023",
     "tags": ["Statistical Methods", "R", "Causal Analysis"]
+  },
+  {
+    "id": "post7",
+    "title": "Harnessing Data Integration for Enhanced Customer Satisfaction",
+    "date": "April 2024",
+    "tags": ["Enterprise Data Integration", "Workato", "Data Project Proposal"]
   }
 ]
