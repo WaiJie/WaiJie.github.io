@@ -3,11 +3,11 @@ This project presents a comprehensive initiative aimed at enhancing customer sat
 ###### Note: This project is fictional and created for educational purposes.
 
 ## Problem Statement
-![Intro - objectives](./images/Intro1.jpg)
+![Intro - objectives](./images/intro1.jpg)
 CosmicCart has seen a drop in customer satisfaction (CSAT) scores due to slow ticket handling times and incomplete information provided by service agents. This is caused by isolated systems, requiring agents to access multiple applications and manually updated customer data. To resolve these issues, an enterprise data hub is proposed.
 
 ## Proposed Solution
-![Intro2 - outline of datahub proposal](./images/Intro2.jpg)
+![Intro2 - outline of datahub proposal](./images/intro2.jpg)
 The data hub will integrate isolated data sources into a single, consolidated data lake, providing a "Customer 360" view. This unified data will empower service agents with better insights through Zendesk, improving ticket handling times and personalized responses. The hub also enables the use of generative AI for further productivity enhancements, potentially improving CSAT scores.
 
 In addition to resolving the immediate CSAT concerns, the hub will automate data loading processes and open the door to future use cases like AI-driven customer interactions and product recommendations. It will also support collaboration with other teams, such as marketing, requiring access to customer data.
