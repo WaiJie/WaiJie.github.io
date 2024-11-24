@@ -9,7 +9,7 @@
     "id": "post2",
     "title": "Identifying High Value HDB Flats with SPSS Modeler",
     "date": "April 2024",
-    "tags": ["SPSS Modeler", "Tableau", "Machine Learning", "Featured"]
+    "tags": ["SPSS Modeler", "Tableau", "Machine Learning"]
   },
   {
     "id": "post3",
@@ -40,5 +40,17 @@
     "title": "Harnessing Data Integration for Enhanced Customer Satisfaction",
     "date": "April 2024",
     "tags": ["Enterprise Data Integration", "Workato", "Data Project Proposal"]
+  },
+  {
+    "id": "post8",
+    "title": "Customer Segmentation Using K-Means Clustering",
+    "date": "November 2024",
+    "tags": ["Python","Clustering", "K-Means", "Customer Segmentation", "Principal Component Analysis","Featured"]
+  },
+  {
+    "id": "post9",
+    "title": "Leveraging NLP to Enhance Financial Analysis of Analyst Reports",
+    "date": "November 2024",
+    "tags": ["Python","Natural Language Processing", "NLTK", "FinBERT", "Sentiment Analysis", "Topic Modelling","LDA","Featured"]
   }
 ]
